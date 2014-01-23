@@ -107,7 +107,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>bottom</code></td><td>2</td><td></td></tr>
 <tr><td><code>all</code></td><td>3</td><td></td></tr>
 </table>
-          @attr name android:edge_flag
+          @attr name me.imid.swipebacklayout.lib:edge_flag
         */
         public static final int SwipeBackLayout_edge_flag = 1;
         /**
@@ -123,7 +123,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:edge_size
+          @attr name me.imid.swipebacklayout.lib:edge_size
         */
         public static final int SwipeBackLayout_edge_size = 0;
         /**
@@ -133,7 +133,7 @@ containing a value of this type.
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:shadow_bottom
+          @attr name me.imid.swipebacklayout.lib:shadow_bottom
         */
         public static final int SwipeBackLayout_shadow_bottom = 4;
         /**
@@ -143,7 +143,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:shadow_left
+          @attr name me.imid.swipebacklayout.lib:shadow_left
         */
         public static final int SwipeBackLayout_shadow_left = 2;
         /**
@@ -153,7 +153,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:shadow_right
+          @attr name me.imid.swipebacklayout.lib:shadow_right
         */
         public static final int SwipeBackLayout_shadow_right = 3;
     };

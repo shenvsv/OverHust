@@ -2,9 +2,14 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="/home/fhw/Documents/android-code/OverHust/extras/AppMsgLibrary/res" >
+        <source path="/Users/shenvsv/Documents/newgit/demo/OverHust/extras/AppMsgLibrary/res" >
             <file
-                path="/home/fhw/Documents/android-code/OverHust/extras/AppMsgLibrary/res/values/colors.xml"
+                name="app_msg"
+                path="/Users/shenvsv/Documents/newgit/demo/OverHust/extras/AppMsgLibrary/res/layout/app_msg.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="/Users/shenvsv/Documents/newgit/demo/OverHust/extras/AppMsgLibrary/res/values/colors.xml"
                 qualifiers="" >
                 <color name="meself" >#FFFFFF
                 </color>
@@ -17,16 +22,11 @@
                 <color name="overhust" >#7bdb79
                 </color>
             </file>
-            <file
-                name="app_msg"
-                path="/home/fhw/Documents/android-code/OverHust/extras/AppMsgLibrary/res/layout/app_msg.xml"
-                qualifiers=""
-                type="layout" />
         </source>
-        <source path="/home/fhw/Documents/android-code/OverHust/extras/AppMsgLibrary/build/res/rs/debug" />
+        <source path="/Users/shenvsv/Documents/newgit/demo/OverHust/extras/AppMsgLibrary/build/res/rs/debug" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/home/fhw/Documents/android-code/OverHust/extras/AppMsgLibrary/src/debug/res" />
+        <source path="/Users/shenvsv/Documents/newgit/demo/OverHust/extras/AppMsgLibrary/src/debug/res" />
     </dataSet>
 
 </merger>
