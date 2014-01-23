@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_search">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/search_start"
+        android:background="@drawable/pic">
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_search_edittext"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="200dp"
+            android:layout_centerHorizontal="true"
+            android:hint="输入查找类别"
+            android:textColorHint="#5462A7"
+            android:gravity="center" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/search_edit"
+            android:layout_alignRight="@+id/search_edit"
+            android:layout_below="@+id/search_edit"
+            android:visibility="gone"
+            android:id="@+id/search_list"></ListView>
+
+        <ImageView
+            android:id="@+id/search_into"
+            android:layout_below="@id/search_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/search_into_selector"
+            android:layout_marginTop="40dp" />
+    </RelativeLayout>
+
+</FrameLayout>

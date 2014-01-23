@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/navi_bar">
+
+    <TextView
+        android:id="@android:id/message"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:textColor="?android:textColorPrimaryInverse"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        android:textStyle="normal"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="OverHustDialog" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="NetworkErrorDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--  去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--屏幕背景是否变暗-->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="FeedbackDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--  去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--屏幕背景是否变暗-->
+        <item name="android:backgroundDimAmount">0.7</item>
+    </style>
+
+    <style name="LoadStreetDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--  去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--屏幕背景是否变暗-->
+        <item name="android:backgroundDimAmount">0.7</item>
+    </style>
+
+    <style name="dialoganim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+</resources>

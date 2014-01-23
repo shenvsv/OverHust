@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: additionnal">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/OverHust/libs/additionnal.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

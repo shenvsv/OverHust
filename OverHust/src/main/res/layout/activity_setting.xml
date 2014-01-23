@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_map_pre">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/feedback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/feedback_selector" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutus"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/feedback"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/aboutus_selector" />
+
+    <ImageView
+        android:id="@+id/about_overhust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/aboutus"
+        android:background="@drawable/about_overhust_selector"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingback"
+        android:background="@drawable/settingback_selector"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

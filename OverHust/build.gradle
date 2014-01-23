@@ -1,0 +1,65 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.7.+'
+    }
+}
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:13.0.+'
+    compile project(':extras:SwipeBackLibrary')
+    compile project(':extras:AppMsgLibrary')
+    compile files('libs/SosoMapsdk_raster_v1.0.3.jar')
+    compile files('libs/umeng_sdk.jar')
+    compile files('libs/aphid-flipview-library.jar')
+    compile files('libs/crouton-1.8.1.jar')
+    compile files('libs/activation.jar')
+    compile files('libs/additionnal.jar')
+    compile files('libs/mail.jar')
+}
+
+task copyNativeLibs(type: Copy) {
+    from(new File(project(':OverHust').buildDir, 'native-libs')) {
+        include '**/*.so'
+    }
+    into new File(buildDir, 'native-libs')
+}
+tasks.withType(Compile) { compileTask -> compileTask.dependsOn copyNativeLibs }
+
+clean.dependsOn 'cleanCopyNativeLibs'
+
+tasks.withType(com.android.build.gradle.tasks.PackageApplication) { pkgTask ->
+    pkgTask.jniFolders = new HashSet<File>()
+    pkgTask.jniFolders.add(new File(buildDir, 'native-libs'))
+}
+
+tasks.withType(Compile) {
+    options.encoding = "UTF-8"
+}
+
+String VERSION_NAME = "v0.8"
+int VERSION_CODE = 3
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.0.0'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 19
+        versionCode VERSION_CODE
+        versionName VERSION_NAME
+    }
+
+}
+
+
+
+

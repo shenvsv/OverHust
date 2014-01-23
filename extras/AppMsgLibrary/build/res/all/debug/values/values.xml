@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/home/fhw/Documents/android-code/OverHust/extras/AppMsgLibrary/res/values/colors.xml -->
+    <eat-comment />
+
+    <color name="alert">#e54141</color>
+    <color name="confirm">#FF8800</color>
+    <color name="info">#669900</color>
+    <color name="meself">#FFFFFF</color>
+    <color name="overhust">#7bdb79</color>
+
+</resources>

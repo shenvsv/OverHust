@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/feedback_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_feedback_head" />
+
+    <EditText
+        android:paddingTop="1dp"
+        android:paddingLeft="3dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#a5a4a4"
+        android:hint="请写下您的意见..."
+        android:id="@+id/feedback_details"
+        android:layout_below="@id/feedback_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_feedback_details"
+        android:gravity="left"/>
+
+    <EditText
+        android:paddingLeft="3dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#a5a4a4"
+        android:hint="您的联系方式(选填)"
+        android:id="@+id/feedback_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_feedback_contact"
+        android:layout_below="@id/feedback_details" />
+
+    <ImageView
+        android:id="@+id/feedback_commit"
+        android:layout_below="@id/feedback_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feedback_commit_selector"/>
+
+    <ImageView
+        android:layout_below="@id/feedback_contact"
+        android:background="@drawable/feedback_cancel_selector"
+        android:id="@+id/feedback_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/feedback_commit" />
+</RelativeLayout>

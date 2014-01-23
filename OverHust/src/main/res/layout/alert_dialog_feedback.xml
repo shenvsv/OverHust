@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alert_dialog_feedback_textview_first"
+        android:textColor="#44abd8"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:typeface="monospace"
+        android:hint="请输入您的反馈"
+        android:textColorHint="#778899"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:textCursorDrawable="@null"/>
+
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alert_dialog_feedback_textview_two"
+        android:textColor="#44abd8"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:typeface="monospace"
+        android:hint="请输入您的联系方式"
+        android:textColorHint="#778899"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:textCursorDrawable="@null"/>
+</LinearLayout>

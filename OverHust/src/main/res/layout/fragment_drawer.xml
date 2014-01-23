@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="155dp"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_drawer"
+    android:orientation="vertical"
+    android:background="@drawable/drawer_shadow">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp" />
+
+    <ImageView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:src="@drawable/map_selector" />
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:src="@drawable/search_selector" />
+
+    <ImageView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:src="@drawable/navigation" />
+
+    <ImageView
+        android:id="@+id/schoolbus"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:src="@drawable/schoolbus_selector" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+    <ImageView
+        android:id="@+id/me"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:src="@drawable/me_selector" />
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:src="@drawable/setting_selector" />
+
+</LinearLayout>

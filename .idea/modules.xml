@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/extras/AppMsgLibrary/AppMsgLibrary.iml" filepath="$PROJECT_DIR$/extras/AppMsgLibrary/AppMsgLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OverHust.iml" filepath="$PROJECT_DIR$/OverHust.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OverHust/OverHust-OverHust.iml" filepath="$PROJECT_DIR$/OverHust/OverHust-OverHust.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extras/SwipeBackLibrary/SwipeBackLibrary.iml" filepath="$PROJECT_DIR$/extras/SwipeBackLibrary/SwipeBackLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extras/extras.iml" filepath="$PROJECT_DIR$/extras/extras.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="@drawable/ic_map_pre">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/navitationRecord"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/navitationrecord_selector" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchRecord"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/searchrecord_selector"
+        android:layout_below="@id/navitationRecord"
+        android:layout_marginTop="60dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loveRecord"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/searchRecord"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/melove_selector" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/meback"
+        android:background="@drawable/meback_selector"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
