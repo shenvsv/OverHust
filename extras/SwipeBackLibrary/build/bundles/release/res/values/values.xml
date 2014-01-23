@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/home/fhw/Documents/android-code/OverHust/extras/SwipeBackLibrary/src/main/res/values/attrs.xml -->
+    <!-- From: file:/Users/shenvsv/Documents/newgit/demo/OverHust/extras/SwipeBackLibrary/src/main/res/values/attrs.xml -->
     <eat-comment />
 
     <attr name="SwipeBackLayoutStyle" format="reference" />
@@ -18,7 +18,7 @@
         <attr name="shadow_right" format="reference" />
         <attr name="shadow_bottom" format="reference" />
     </declare-styleable>
-    <!-- From: file:/home/fhw/Documents/android-code/OverHust/extras/SwipeBackLibrary/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/shenvsv/Documents/newgit/demo/OverHust/extras/SwipeBackLibrary/src/main/res/values/styles.xml -->
     <eat-comment />
 
     <style name="SwipeBackLayout">

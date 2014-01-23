@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/home/fhw/Documents/android-code/OverHust/extras/AppMsgLibrary/res/values/colors.xml -->
+    <!-- From: file:/Users/shenvsv/Documents/newgit/demo/OverHust/extras/AppMsgLibrary/res/values/colors.xml -->
     <eat-comment />
 
     <color name="alert">#e54141</color>

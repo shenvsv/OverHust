@@ -2,10 +2,10 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="/home/fhw/Documents/android-code/OverHust/extras/AppMsgLibrary/src/main/assets" />
+        <source path="/Users/shenvsv/Documents/newgit/demo/OverHust/extras/AppMsgLibrary/src/main/assets" />
     </dataSet>
     <dataSet config="release" >
-        <source path="/home/fhw/Documents/android-code/OverHust/extras/AppMsgLibrary/src/release/assets" />
+        <source path="/Users/shenvsv/Documents/newgit/demo/OverHust/extras/AppMsgLibrary/src/release/assets" />
     </dataSet>
 
 </merger>

@@ -1,4 +1,5 @@
-<!-- From: file:/home/fhw/Documents/android-code/OverHust/extras/AppMsgLibrary/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="4" android:versionName="1.1.1" package="com.devspark.appmsg">
+<!-- From: file:/Users/shenvsv/Documents/newgit/demo/OverHust/extras/AppMsgLibrary/AndroidManifest.xml -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="4" android:versionName="1.1.1" package="com.devspark.appmsg">
 
     <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="18"/>
 

@@ -86,69 +86,7 @@
     <favorites_list name="OverHust" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="MapFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OverHust/src/main/java/com/unique/overhust/fragment/MapFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="39" selection-start="1778" selection-end="1778" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5263">
-              <folding>
-                <element signature="e#2499#2679#0" expanded="true" />
-                <element signature="e#2668#2669#0" expanded="true" />
-                <element signature="e#5157#5333#0" expanded="true" />
-                <element signature="e#5322#5323#0" expanded="true" />
-                <element signature="e#5944#6198#0" expanded="true" />
-                <element signature="e#6175#6176#0" expanded="true" />
-                <element signature="e#6740#7109#0" expanded="true" />
-                <element signature="e#7098#7099#0" expanded="true" />
-                <element signature="e#8574#8725#0" expanded="true" />
-                <element signature="e#8714#8715#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NavigationFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OverHust/src/main/java/com/unique/overhust/fragment/NavigationFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="221" column="44" selection-start="8470" selection-end="8470" vertical-scroll-proportion="0.0" vertical-offset="2002" max-vertical-offset="7182">
-              <folding>
-                <element signature="e#4286#4457#0" expanded="true" />
-                <element signature="e#4446#4447#0" expanded="true" />
-                <element signature="e#4541#5202#0" expanded="true" />
-                <element signature="e#5191#5192#0" expanded="true" />
-                <element signature="e#5243#7241#0" expanded="true" />
-                <element signature="e#6446#7049#0" expanded="true" />
-                <element signature="e#7026#7027#0" expanded="true" />
-                <element signature="e#7229#7230#0" expanded="true" />
-                <element signature="e#8470#8839#0" expanded="true" />
-                <element signature="e#8820#8821#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DrawerFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OverHust/src/main/java/com/unique/overhust/fragment/DrawerFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="13" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="2261">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_drawer.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/OverHust/src/main/res/layout/fragment_drawer.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="14" selection-start="425" selection-end="425" vertical-scroll-proportion="0.18834952" vertical-offset="131" max-vertical-offset="1102">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -1651,9 +1589,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/../../android-demo/Android-AppMsg/gradle" value="1388042712404" />
-        <entry key="$PROJECT_DIR$/../../android-demo/Dribbo-master" value="1375010863000" />
-        <entry key="$PROJECT_DIR$/../../android-demo/SwipeBackLayout" value="1387250274928" />
+        <entry key="$PROJECT_DIR$/../../OverHust" value="1387550215000" />
       </map>
     </option>
   </component>
@@ -1673,14 +1609,15 @@
         <option value="$PROJECT_DIR$/OverHust/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/OverHust/src/main/java/com/unique/overhust/fragment/MapFragment.java" />
         <option value="$PROJECT_DIR$/OverHust/src/main/res/layout/fragment_drawer.xml" />
+        <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+        <option value="$PROJECT_DIR$/extras/AppMsgLibrary/build.gradle" />
+        <option value="$PROJECT_DIR$/extras/SwipeBackLibrary/build.gradle" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1367" />
-    <option name="y" value="-1" />
-    <option name="width" value="1368" />
-    <option name="height" value="770" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -1708,6 +1645,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1740,10 +1678,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OverHust" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OverHust" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extras" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1753,17 +1706,10 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="options.lastSelected" value="reference.settingsdialog.project.gradle" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../android-demo/SwipeBackLayout" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="e076c7a5" />
-    <property name="FullScreen" value="false" />
+    <property name="FullScreen" value="true" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="fc1387c3" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="test" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1943,37 +1889,30 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1367" y="-1" width="1368" height="770" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952815" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.552459" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5590164" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30974126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19384836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1993,250 +1932,44 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OverHust/build.gradle">
+    <entry file="file://$PROJECT_DIR$/extras/SwipeBackLibrary/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="979" selection-end="979" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="1330">
+        <state line="12" column="25" selection-start="200" selection-end="200" vertical-scroll-proportion="0.23195876" vertical-offset="0" max-vertical-offset="776">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/java/com/unique/overhust/UI/FeedbackDialog.java">
+    <entry file="file://$PROJECT_DIR$/extras/AppMsgLibrary/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="35" selection-start="1874" selection-end="1874" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2242" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="66" selection-start="2791" selection-end="2791" vertical-scroll-proportion="0.0" vertical-offset="1178" max-vertical-offset="1349" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/res/anim/dialog_enter.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="34" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="228" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/res/anim/dialog_exit.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="31" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="228" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/java/com/unique/overhust/MainActivity/SettingActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="30" selection-start="4503" selection-end="4503" vertical-scroll-proportion="0.0" vertical-offset="2394" max-vertical-offset="3249" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="1045">
+        <state line="8" column="30" selection-start="109" selection-end="135" vertical-scroll-proportion="0.15463917" vertical-offset="0" max-vertical-offset="776">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/java/com/unique/overhust/MapUtils/OverHustLocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="357" selection-end="357" vertical-scroll-proportion="-0.8099467" vertical-offset="627" max-vertical-offset="3078" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/res/drawable-xxhdpi/button_daohang.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/res/drawable-xxhdpi/cover.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/res/drawable-xxhdpi/ic_map_pre.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/res/layout/overhustsimple.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="26" selection-start="710" selection-end="710" vertical-scroll-proportion="0.7378641" vertical-offset="0" max-vertical-offset="570" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/res/layout/fragment_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="543" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="33" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.94621515" vertical-offset="133" max-vertical-offset="741" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/java/com/unique/overhust/MainActivity/SettingActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="30" selection-start="4503" selection-end="4503" vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="2489" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/res/anim/dialog_exit.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="27" selection-start="180" selection-end="180" vertical-scroll-proportion="0.17335767" vertical-offset="0" max-vertical-offset="548" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/java/com/unique/overhust/UI/FeedbackDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="55" selection-start="2471" selection-end="2560" vertical-scroll-proportion="0.0" vertical-offset="767" max-vertical-offset="1672" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/java/com/unique/overhust/UI/NetworkErrorDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="55" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="874" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/java/com/unique/overhust/UI/LoadStreetDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="55" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.7256944" vertical-offset="285" max-vertical-offset="1102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/res/anim/dialog_enter.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="29" selection-start="184" selection-end="184" vertical-scroll-proportion="0.17335767" vertical-offset="0" max-vertical-offset="548" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576" />
+        <state line="0" column="70" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="726">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/java/com/unique/overhust/MainActivity/StartActivity.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.5737122" vertical-offset="0" max-vertical-offset="2280" />
+        <state line="12" column="30" selection-start="325" selection-end="325" vertical-scroll-proportion="0.23195876" vertical-offset="0" max-vertical-offset="776">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OverHust/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="20" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.2361111" vertical-offset="757" max-vertical-offset="1349">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/res/layout/umeng_common_download_notification.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/extras/extras.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2128">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/OverHust/libs/umeng_sdk.jar!/com/umeng/update/UmengUpdateAgent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="46" selection-start="1963" selection-end="1963" vertical-scroll-proportion="-0.44444445" vertical-offset="1083" max-vertical-offset="1596">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/OverHust/libs/umeng_sdk.jar!/com/umeng/update/UpdateDialogActivity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="159" selection-end="159" vertical-scroll-proportion="0.18518518" vertical-offset="0" max-vertical-offset="513">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="60" selection-start="184" selection-end="184" vertical-scroll-proportion="3.392857" vertical-offset="171" max-vertical-offset="1349">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="73" selection-start="2740" selection-end="2740" vertical-scroll-proportion="0.21308412" vertical-offset="1026" max-vertical-offset="1653">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/res/layout/umeng_update_dialog.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2793">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/res/layout-v9/umeng_common_download_notification.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2071">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/res/values-zh/umeng_common_strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="535">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/java/com/unique/overhust/fragment/MapFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="39" selection-start="1778" selection-end="1778" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5263">
-          <folding>
-            <element signature="e#2499#2679#0" expanded="true" />
-            <element signature="e#2668#2669#0" expanded="true" />
-            <element signature="e#5157#5333#0" expanded="true" />
-            <element signature="e#5322#5323#0" expanded="true" />
-            <element signature="e#5944#6198#0" expanded="true" />
-            <element signature="e#6175#6176#0" expanded="true" />
-            <element signature="e#6740#7109#0" expanded="true" />
-            <element signature="e#7098#7099#0" expanded="true" />
-            <element signature="e#8574#8725#0" expanded="true" />
-            <element signature="e#8714#8715#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/java/com/unique/overhust/fragment/NavigationFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="221" column="44" selection-start="8470" selection-end="8470" vertical-scroll-proportion="0.0" vertical-offset="2002" max-vertical-offset="7182">
-          <folding>
-            <element signature="e#4286#4457#0" expanded="true" />
-            <element signature="e#4446#4447#0" expanded="true" />
-            <element signature="e#4541#5202#0" expanded="true" />
-            <element signature="e#5191#5192#0" expanded="true" />
-            <element signature="e#5243#7241#0" expanded="true" />
-            <element signature="e#6446#7049#0" expanded="true" />
-            <element signature="e#7026#7027#0" expanded="true" />
-            <element signature="e#7229#7230#0" expanded="true" />
-            <element signature="e#8470#8839#0" expanded="true" />
-            <element signature="e#8820#8821#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/java/com/unique/overhust/fragment/DrawerFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="2261">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverHust/src/main/res/layout/fragment_drawer.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="425" selection-end="425" vertical-scroll-proportion="0.18834952" vertical-offset="131" max-vertical-offset="1102">
+        <state line="11" column="9" selection-start="679" selection-end="679" vertical-scroll-proportion="0.21625164" vertical-offset="0" max-vertical-offset="763">
           <folding />
         </state>
       </provider>
