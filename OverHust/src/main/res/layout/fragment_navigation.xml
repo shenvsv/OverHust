@@ -51,7 +51,8 @@
             android:hint="我的位置"
             android:textColorHint="#5462A7"
             android:gravity="center"
-            android:textColor="#ffffff"/>
+            android:textColor="#ffffff"
+            android:paddingLeft="30dp" />
 
         <EditText
             android:id="@+id/editText1"
@@ -63,7 +64,8 @@
             android:background="@drawable/end_edittext"
             android:ems="10"
             android:gravity="center"
-            android:textColor="#ffffff"/>
+            android:textColor="#ffffff"
+            android:paddingLeft="30dp" />
 
         <ImageView
             android:id="@+id/imageView1"
