@@ -2,7 +2,6 @@ package com.unique.overhust.fragment;
 
 
 import android.app.Fragment;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
@@ -13,7 +12,6 @@ import android.os.Message;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,7 +28,6 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.devspark.appmsg.AppMsg;
 import com.tencent.street.StreetViewListener;
@@ -41,18 +38,18 @@ import com.tencent.street.overlay.ItemizedOverlay;
 import com.unique.overhust.CommonUtils.IsNetwork;
 import com.unique.overhust.MainActivity.MainActivity;
 import com.unique.overhust.MapUtils.OverHustLocation;
+import com.unique.overhust.MapUtils.StreetPoiData;
 import com.unique.overhust.NavigationUtils.NaviInfo;
 import com.unique.overhust.NavigationUtils.NavigationPoint;
 import com.unique.overhust.NavigationUtils.NavigationTools;
 import com.unique.overhust.NavigationUtils.StreetNavigationOverlay;
-import com.unique.overhust.MapUtils.StreetPoiData;
 import com.unique.overhust.R;
 import com.unique.overhust.UI.LoadStreetDialog;
 
 import java.util.ArrayList;
 
 
-public class NavigationFragment extends Fragment implements TextWatcher {
+public class NavigationFragment extends Fragment implements TextWatcher{
     private View streetView;
     private ViewGroup mView;
     private LoadStreetDialog mDialog;
@@ -75,14 +72,18 @@ public class NavigationFragment extends Fragment implements TextWatcher {
 
     private StreetNavigationOverlay overlay;
 
-    private EditText endEditText;
-    private EditText startEditText;
+    //Views
+    private TextView endEditText;
+    private TextView startEditText;
+    private EditText searchEdit;
     private ListView mListView;
-    private TextView mTextView;
     private ArrayAdapter<String> mAdapter;
     private final String[] mStrings = NavigationPoint.name;
     private RelativeLayout mRelativeLayout;
     private ImageView mImageView;
+    private LinearLayout searchLayout;
+    TextView mTextView = null;
+
     private InputMethodManager imm;
 
     private MainActivity mMainActivity;
@@ -96,27 +97,28 @@ public class NavigationFragment extends Fragment implements TextWatcher {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
+        //init views
         streetView = inflater
                 .inflate(R.layout.fragment_navigation, container, false);
 
         mView = (LinearLayout) streetView.findViewById(R.id.streetlayout);
-
+        searchLayout = (LinearLayout)streetView.findViewById(R.id.search_layout);
         mMainActivity = (MainActivity) getActivity();
         mImage = (ImageView) streetView.findViewById(R.id.image);
         // mButton=(Button) streetView.findViewById(R.id.button1);
         mListView = (ListView) streetView.findViewById(R.id.listView1);
-        endEditText = (EditText) streetView.findViewById(R.id.editText1);
-        startEditText = (EditText) streetView.findViewById(R.id.editText2);
+        endEditText = (TextView) streetView.findViewById(R.id.endText);
+        startEditText = (TextView) streetView.findViewById(R.id.startText);
+        searchEdit = (EditText) streetView.findViewById(R.id.search_edit);
         mRelativeLayout = (RelativeLayout) streetView
                 .findViewById(R.id.searchlayout);
         mImageView = (ImageView) streetView.findViewById(R.id.imageView1);
-        mTextView = (TextView) streetView.findViewById(R.id.textView1);
         mContext = getActivity();
 
-        imm = (InputMethodManager) mContext.getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.toggleSoftInput(InputMethodManager.RESULT_UNCHANGED_HIDDEN,
-                InputMethodManager.HIDE_NOT_ALWAYS);
+
+//        imm = (InputMethodManager) mContext.getSystemService(Context.INPUT_METHOD_SERVICE);
+//        imm.toggleSoftInput(InputMethodManager.RESULT_UNCHANGED_HIDDEN,
+//                InputMethodManager.HIDE_NOT_ALWAYS);
 
         mAdapter = new ArrayAdapter<String>(getActivity(),
                 android.R.layout.simple_list_item_1, mStrings);
@@ -136,13 +138,9 @@ public class NavigationFragment extends Fragment implements TextWatcher {
                 // TODO Auto-generated method stub
                 //mRelativeLayout.setVisibility(View.GONE);
                 String aString = mAdapter.getItem(position);
-                if (startEditText.isFocused()) {
-                    startEditText.setText(aString);
-                }
-                if (endEditText.isFocused()) {
-                    endEditText.setText(mAdapter.getItem(position));
-                }
+                mTextView.setText(aString);
                 dismissList();
+                searchLayout.setVisibility(View.GONE);
             }
         });
         mImageView.setOnClickListener(new OnClickListener() {
@@ -189,13 +187,35 @@ public class NavigationFragment extends Fragment implements TextWatcher {
             }
 
         });
-        startEditText.addTextChangedListener(this);
-        endEditText.addTextChangedListener(this);
+        startEditText.setOnClickListener(searchListener);
+        endEditText.setOnClickListener(searchListener);
+        searchEdit.addTextChangedListener(this);
         mIsNetWork = new IsNetwork(mContext);
         mIsNetWork.isNetwork();
 
         return streetView;
     }
+    private OnClickListener searchListener = new OnClickListener() {
+        @Override
+        public void onClick(View view) {
+
+            switch (view.getId()){
+                case R.id.startText:
+                    mTextView = startEditText;
+                    System.out.println("search1");
+                    break;
+                case R.id.endText:
+                    mTextView = endEditText;
+                    System.out.println("search2");
+                    break;
+                default:break;
+
+            }
+            searchLayout.setVisibility(View.VISIBLE);
+
+        }
+    };
+
 
     private void initStreatView(NavigationPoint startPoint, NavigationPoint endPoint) {
         // TODO Auto-generated method stub
@@ -344,9 +364,9 @@ public class NavigationFragment extends Fragment implements TextWatcher {
     @Override
     public void onDestroy() {
         super.onDestroy();
-//		if (mStreetView!=null) {
-//			StreetViewShow.getInstance().destory();
-//		}
+		if (mStreetView!=null) {
+			StreetViewShow.getInstance().destory();
+		}
     }
 
     @Override
@@ -386,16 +406,16 @@ public class NavigationFragment extends Fragment implements TextWatcher {
 
     private void dismissList() {
         // TODO Auto-generated method stub
-        imm.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);
         mListView.setVisibility(View.GONE);
-        mImageView.setVisibility(View.VISIBLE);
+
     }
 
     private void showList() {
         // TODO Auto-generated method stub
         mListView.setVisibility(View.VISIBLE);
-        mImageView.setVisibility(View.GONE);
+
     }
+
 
     @Override
     public void beforeTextChanged(CharSequence s, int start, int count,
@@ -426,4 +446,5 @@ public class NavigationFragment extends Fragment implements TextWatcher {
     public void dismissDialog() {
         mDialog.dismiss();
     }
+
 }
