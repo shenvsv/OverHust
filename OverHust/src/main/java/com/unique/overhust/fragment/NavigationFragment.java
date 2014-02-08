@@ -49,7 +49,7 @@ import com.unique.overhust.UI.LoadStreetDialog;
 import java.util.ArrayList;
 
 
-public class NavigationFragment extends Fragment implements TextWatcher{
+public class NavigationFragment extends Fragment implements TextWatcher {
     private View streetView;
     private ViewGroup mView;
     private LoadStreetDialog mDialog;
@@ -82,11 +82,13 @@ public class NavigationFragment extends Fragment implements TextWatcher{
     private RelativeLayout mRelativeLayout;
     private ImageView mImageView;
     private LinearLayout searchLayout;
-    TextView mTextView = null;
+
 
     private InputMethodManager imm;
 
     private MainActivity mMainActivity;
+
+    private SearchView searchView = null;
 
 
     //连网检查
@@ -102,24 +104,26 @@ public class NavigationFragment extends Fragment implements TextWatcher{
                 .inflate(R.layout.fragment_navigation, container, false);
 
         mView = (LinearLayout) streetView.findViewById(R.id.streetlayout);
-        searchLayout = (LinearLayout)streetView.findViewById(R.id.search_layout);
+        //Search
+        searchLayout = (LinearLayout) streetView.findViewById(R.id.search_layout);
+        searchEdit = (EditText) streetView.findViewById(R.id.search_edit);
+        mListView = (ListView) streetView.findViewById(R.id.listView1);
+
         mMainActivity = (MainActivity) getActivity();
         mImage = (ImageView) streetView.findViewById(R.id.image);
-        // mButton=(Button) streetView.findViewById(R.id.button1);
-        mListView = (ListView) streetView.findViewById(R.id.listView1);
+
         endEditText = (TextView) streetView.findViewById(R.id.endText);
         startEditText = (TextView) streetView.findViewById(R.id.startText);
-        searchEdit = (EditText) streetView.findViewById(R.id.search_edit);
+
         mRelativeLayout = (RelativeLayout) streetView
                 .findViewById(R.id.searchlayout);
         mImageView = (ImageView) streetView.findViewById(R.id.imageView1);
+
         mContext = getActivity();
 
+        imm = (InputMethodManager) searchEdit.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
 
-//        imm = (InputMethodManager) mContext.getSystemService(Context.INPUT_METHOD_SERVICE);
-//        imm.toggleSoftInput(InputMethodManager.RESULT_UNCHANGED_HIDDEN,
-//                InputMethodManager.HIDE_NOT_ALWAYS);
-
+        searchView = new SearchView();
         mAdapter = new ArrayAdapter<String>(getActivity(),
                 android.R.layout.simple_list_item_1, mStrings);
         mHandler = new Handler() {
@@ -128,6 +132,7 @@ public class NavigationFragment extends Fragment implements TextWatcher{
                 mImage.setImageBitmap((Bitmap) msg.obj);
             }
         };
+
         mListView.setAdapter(mAdapter);
 
         mListView.setOnItemClickListener(new OnItemClickListener() {
@@ -138,9 +143,7 @@ public class NavigationFragment extends Fragment implements TextWatcher{
                 // TODO Auto-generated method stub
                 //mRelativeLayout.setVisibility(View.GONE);
                 String aString = mAdapter.getItem(position);
-                mTextView.setText(aString);
-                dismissList();
-                searchLayout.setVisibility(View.GONE);
+                searchView.dismiss(aString);
             }
         });
         mImageView.setOnClickListener(new OnClickListener() {
@@ -173,7 +176,7 @@ public class NavigationFragment extends Fragment implements TextWatcher{
                         public void run() {
                             // TODO Auto-generated method stub
                             //Toast.makeText(mContext, "请输入目的地", Toast.LENGTH_SHORT).show();
-                            AppMsg appMsg = AppMsg.makeText(mMainActivity, "请输入目的地", new AppMsg.Style(AppMsg.LENGTH_SHORT, R.color.alert),R.layout.appmsg_red);
+                            AppMsg appMsg = AppMsg.makeText(mMainActivity, "请输入目的地", new AppMsg.Style(AppMsg.LENGTH_SHORT, R.color.alert), R.layout.appmsg_red);
                             appMsg.setLayoutGravity(Gravity.TOP);
                             appMsg.show();
                             return;
@@ -195,23 +198,27 @@ public class NavigationFragment extends Fragment implements TextWatcher{
 
         return streetView;
     }
+
     private OnClickListener searchListener = new OnClickListener() {
         @Override
         public void onClick(View view) {
 
-            switch (view.getId()){
+            switch (view.getId()) {
                 case R.id.startText:
-                    mTextView = startEditText;
+                    searchView.show(startEditText);
+
                     System.out.println("search1");
                     break;
                 case R.id.endText:
-                    mTextView = endEditText;
+                    searchView.show(endEditText);
                     System.out.println("search2");
                     break;
-                default:break;
+                default:
+                    break;
 
             }
-            searchLayout.setVisibility(View.VISIBLE);
+
+
 
         }
     };
@@ -364,9 +371,9 @@ public class NavigationFragment extends Fragment implements TextWatcher{
     @Override
     public void onDestroy() {
         super.onDestroy();
-		if (mStreetView!=null) {
-			StreetViewShow.getInstance().destory();
-		}
+        if (mStreetView != null) {
+            StreetViewShow.getInstance().destory();
+        }
     }
 
     @Override
@@ -432,7 +439,7 @@ public class NavigationFragment extends Fragment implements TextWatcher{
 
     //加载progressDialog
     public LoadStreetDialog showDialog() {
-        mDialog=new LoadStreetDialog(mContext,R.style.LoadStreetDialog);
+        mDialog = new LoadStreetDialog(mContext, R.style.LoadStreetDialog);
         mDialog.show();
 
         startEditText.setVisibility(View.INVISIBLE);
@@ -446,5 +453,32 @@ public class NavigationFragment extends Fragment implements TextWatcher{
     public void dismissDialog() {
         mDialog.dismiss();
     }
+
+    private class SearchView{
+        private TextView textView = null;
+        private boolean isShow ;
+        public SearchView(){
+             isShow = false;
+        }
+        public void show(TextView textView){
+            this.textView = textView;
+            isShow = true;
+            searchLayout.setVisibility(View.VISIBLE);
+            searchEdit.setText(textView.getText().toString());
+            searchEdit.setSelection(searchEdit.length());
+            searchEdit.requestFocus();
+
+            imm.toggleSoftInput(0, InputMethodManager.SHOW_FORCED);
+        }
+        public void dismiss(String text){
+             if (isShow == true){
+                 textView.setText(text);
+             }
+            searchEdit.setText("");
+            searchLayout.setVisibility(View.GONE);
+            imm.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);
+        }
+    }
+
 
 }
