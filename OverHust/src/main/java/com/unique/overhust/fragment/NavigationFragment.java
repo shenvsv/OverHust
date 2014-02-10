@@ -17,6 +17,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -463,6 +465,9 @@ public class NavigationFragment extends Fragment implements TextWatcher {
         public void show(TextView textView){
             this.textView = textView;
             isShow = true;
+            Animation searchAnimation = AnimationUtils.loadAnimation(mContext, R.anim.navigation_search);
+            textView.startAnimation(searchAnimation);
+            textView.setVisibility(View.INVISIBLE);
             searchLayout.setVisibility(View.VISIBLE);
             searchEdit.setText(textView.getText().toString());
             searchEdit.setSelection(searchEdit.length());
@@ -474,9 +479,11 @@ public class NavigationFragment extends Fragment implements TextWatcher {
              if (isShow == true){
                  textView.setText(text);
              }
-            searchEdit.setText("");
-            searchLayout.setVisibility(View.GONE);
             imm.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);
+            searchEdit.setText("");
+            textView.setVisibility(View.VISIBLE);
+            searchLayout.setVisibility(View.GONE);
+
         }
     }
 

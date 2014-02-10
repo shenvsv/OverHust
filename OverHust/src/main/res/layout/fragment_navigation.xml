@@ -29,9 +29,6 @@
         android:layout_height="match_parent"
         android:background="@drawable/pic">
 
-
-
-
         <TextView
             android:id="@+id/startText"
             android:layout_width="wrap_content"
@@ -70,12 +67,13 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"
             android:src="@drawable/navitation_into_selector" />
+
     </RelativeLayout>
     <LinearLayout
         android:id="@+id/search_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ffffff"
+        android:background="#c0ffffff"
         android:orientation="vertical"
         android:visibility="gone">
         <EditText
